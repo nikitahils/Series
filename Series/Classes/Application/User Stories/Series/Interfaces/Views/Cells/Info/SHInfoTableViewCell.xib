@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" focusStyle="custom" id="KGk-i7-Jjw" customClass="SHInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jlc-xg-HoE">
+                        <rect key="frame" x="10" y="10" width="50" height="75"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.79607843140000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="SOr-13-4zq"/>
+                            <constraint firstAttribute="height" constant="75" id="W5V-rP-bnY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g32-yW-AzU">
+                        <rect key="frame" x="70" y="10" width="43" height="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwv-BH-K17">
+                        <rect key="frame" x="70" y="38" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jlc-xg-HoE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3Qg-Hl-WLP"/>
+                    <constraint firstItem="g32-yW-AzU" firstAttribute="top" secondItem="Jlc-xg-HoE" secondAttribute="top" id="8Ks-IR-i78"/>
+                    <constraint firstItem="g32-yW-AzU" firstAttribute="leading" secondItem="Jlc-xg-HoE" secondAttribute="trailing" constant="10" id="F1d-gN-Opv"/>
+                    <constraint firstAttribute="bottom" secondItem="Jlc-xg-HoE" secondAttribute="bottom" constant="9.5" id="GxR-8K-2bE"/>
+                    <constraint firstItem="cwv-BH-K17" firstAttribute="leading" secondItem="Jlc-xg-HoE" secondAttribute="trailing" constant="10" id="QKd-Ja-kNm"/>
+                    <constraint firstItem="Jlc-xg-HoE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="c6h-h2-NnV"/>
+                    <constraint firstItem="cwv-BH-K17" firstAttribute="top" secondItem="g32-yW-AzU" secondAttribute="bottom" constant="8" id="vCF-aP-nRe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="additionalDescriptionLabel" destination="cwv-BH-K17" id="WqA-PA-PLn"/>
+                <outlet property="infoImageView" destination="Jlc-xg-HoE" id="vAe-TQ-CZo"/>
+                <outlet property="infoLabel" destination="g32-yW-AzU" id="q27-W3-KZt"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="390.5"/>
+        </tableViewCell>
+    </objects>
+</document>

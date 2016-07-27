@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sf7-7g-3Aq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="CNf-ir-1wf">
+            <objects>
+                <viewController id="sf7-7g-3Aq" customClass="SHAuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eyb-iU-Jh1"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Yp-yo-FVf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gTA-eO-qQn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-xq-h1u">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWk-2g-vI8" customClass="GIDSignInButton">
+                                <rect key="frame" x="185" y="276" width="230" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="MJf-cF-c3E"/>
+                                    <constraint firstAttribute="width" constant="230" id="Yid-tI-LAa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NWk-2g-vI8" firstAttribute="centerY" secondItem="gTA-eO-qQn" secondAttribute="centerY" id="4hb-8c-j5f"/>
+                            <constraint firstAttribute="trailing" secondItem="1Gh-xq-h1u" secondAttribute="trailing" id="bTd-Vg-V6X"/>
+                            <constraint firstItem="9Yp-yo-FVf" firstAttribute="top" secondItem="1Gh-xq-h1u" secondAttribute="bottom" id="cfV-n6-PUW"/>
+                            <constraint firstItem="1Gh-xq-h1u" firstAttribute="top" secondItem="gTA-eO-qQn" secondAttribute="top" id="fLy-0c-y08"/>
+                            <constraint firstItem="1Gh-xq-h1u" firstAttribute="leading" secondItem="gTA-eO-qQn" secondAttribute="leading" id="mcG-vy-WVy"/>
+                            <constraint firstItem="NWk-2g-vI8" firstAttribute="centerX" secondItem="gTA-eO-qQn" secondAttribute="centerX" id="w0v-KE-daJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleSignInButton" destination="NWk-2g-vI8" id="5Wg-gr-JKt"/>
+                        <segue destination="r8z-62-sYr" kind="custom" identifier="_Series" customClass="SHLinkedStoryboardFlipReplaceSegue" id="nml-ca-IxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyx-g5-sNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="73"/>
+        </scene>
+        <!--Storyboard Placeholder View Controller-->
+        <scene sceneID="23P-P8-HiX">
+            <objects>
+                <viewController id="r8z-62-sYr" customClass="SHStoryboardPlaceholderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VdQ-jd-La2"/>
+                        <viewControllerLayoutGuide type="bottom" id="fA1-bh-6ev"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XpU-jy-zwT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7b-7j-OUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundImage" width="375" height="667"/>
+    </resources>
+</document>

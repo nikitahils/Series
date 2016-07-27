@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Shows
+//
+
+#ifndef Shows_PrefixHeader_pch
+#define Shows_PrefixHeader_pch
+
+@import ReactiveCocoa;
+@import ReactiveCocoa.RACEXTKeyPathCoding;
+@import ReactiveCocoa.RACEXTScope;
+@import CocoaLumberjack;
+
+static const DDLogLevel ddLogLevel = DDLogLevelError;
+
+#endif

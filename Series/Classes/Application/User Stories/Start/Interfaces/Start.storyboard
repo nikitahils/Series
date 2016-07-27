@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w7v-n4-97Q">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="KBB-eM-coU">
+            <objects>
+                <viewController id="w7v-n4-97Q" customClass="SHStartViewController" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="qbW-mn-z6t" kind="custom" identifier="_Auth" customClass="SHLinkedStoryboardFadeReplaceSegue" id="FiT-tg-hsW"/>
+                        <segue destination="9HA-Zq-wqi" kind="custom" identifier="_Series" customClass="SHLinkedStoryboardFadeReplaceSegue" id="VDn-Jq-714"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Rv-IB-Vv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="64.5"/>
+        </scene>
+        <!--Storyboard Placeholder View Controller-->
+        <scene sceneID="heX-DZ-BV3">
+            <objects>
+                <viewController id="9HA-Zq-wqi" customClass="SHStoryboardPlaceholderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uCk-NC-VxN"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGs-cx-btX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XHT-UU-8nK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trd-bz-lPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393.5" y="444"/>
+        </scene>
+        <!--Storyboard Placeholder View Controller-->
+        <scene sceneID="gxv-nQ-eRX">
+            <objects>
+                <viewController id="qbW-mn-z6t" customClass="SHStoryboardPlaceholderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hch-CL-QA8"/>
+                        <viewControllerLayoutGuide type="bottom" id="E5o-wm-C2O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e69-cD-vCJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITg-mQ-oR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393.5" y="-252"/>
+        </scene>
+    </scenes>
+</document>
